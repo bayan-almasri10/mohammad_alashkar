@@ -408,7 +408,6 @@ ul {
 
 @media (max-width:320px) {
     .main{
-        padding: 0%;
         height: 100vh;
     }
     .social-icon{
@@ -432,7 +431,6 @@ ul {
 @media (max-width:375px) {
     .main{
         height: 100vh;
-        padding-left: 10%;
     }
     .social-icon{
         padding-right: 1%;
