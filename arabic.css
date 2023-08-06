@@ -118,7 +118,7 @@ header {
     font-size: 0.7rem;
     font-weight: 600;
     display: inline-block;
-    padding: 5% 10%;
+    padding: 4% 8%;
     letter-spacing: 1px;
     border-radius: 20px;
     margin-bottom: 8%;
@@ -142,7 +142,7 @@ header {
     text-decoration: none;
     color: var(--col-2);
     font-size: 1em;
-    padding-right: 6%;
+    padding-right: 4%;
     margin-left: 1%;
 }
 .social-icon a:hover {
