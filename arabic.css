@@ -20,7 +20,7 @@ body {
 }
 
 section{
-    padding: 3% 10%;
+    padding: 3% ;
 }
 
 header {
@@ -74,12 +74,16 @@ header {
 
 }
 .main {
-    max-height: 90VH;
-    display: flex;
+    background-image: url(imges/webBackground21.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: hidden;
+    height:90VH;
+    display: block;
     flex-grow: 0;
     align-items: flex-end;
     justify-content: center;
-    background-color: var(--col-4);
 }
 
 .main .con {
@@ -91,7 +95,7 @@ header {
 
 .main h2 {
     color: var(--col-3);
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 500;
 }
 
@@ -103,26 +107,22 @@ header {
     font-weight: 600;
 }
 
-.main h3 {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+.text {
+    margin: 4rem;
 }
 
 .btn {
     color: aliceblue;
     background-color: var(--col-3);
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 600;
     display: inline-block;
-    padding: 8% 9%;
+    padding: 5% 10%;
     letter-spacing: 1px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 8%;
+    margin-top: 8%;
     transition: 0.7s ease;
 }
 
@@ -142,16 +142,11 @@ header {
     text-decoration: none;
     color: var(--col-2);
     font-size: 1em;
+    padding-right: 6%;
     margin-left: 1%;
 }
-
 .social-icon a:hover {
     color: var(--col-3);
-}
-
-.text {
-    margin-bottom: 4rem;
-    margin-left: rem;
 }
 
 ul {
@@ -184,7 +179,7 @@ ul {
     border-radius: 30% 70% 52% 48% / 32% 35% 65% 68%;
     z-index: 1;
 }
-.social-icon a{
+/*.social-icon a{
     color: var(--col-2);
     font-size: 1.3em;
     padding-right: 30px;
@@ -192,14 +187,14 @@ ul {
 }
 .social-icon a:hover{
     color: var(--col-3);
-}
+}*/
 .title{
     display: flex;
     justify-content: center;
     color: var(--col-4);
     font-size: 2em;
     font-weight: 800;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
 }
 .content{
     display: flex;
@@ -243,9 +238,10 @@ ul {
     text-align: center;
 }
 .inf{
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-align: center;
 }
+
 .cart.info h3{
     display: flex;
     color: var(--col-3);
@@ -365,8 +361,12 @@ ul {
     color: var(--col-2);
 }
 .cart2 a{
+    margin-top: 4%;
     text-decoration: none;
     color: var(--col-4);
+}
+.cart2 a:hover {
+    color: var(--col-3);
 }
 .social-icon2 {
     text-align:center;
@@ -398,78 +398,113 @@ ul {
     color: var(--col-2);
 }
 @media (max-width:320px) {
-    .main{
-        overflow: hidden;
+    .nav {
+        display: none;
     }
+    .main{
+        
+        display: block;
+    }
+    .main .con {
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 0%;
+        margin-right: 0%;
+    }
+    
+    .main h2 {
+        color: var(--col-3);
+        font-size: 0.7em;
+        font-weight: 500;
+    }
+    
+    .main h2 span {
+        display: block;
+        color: var(--col-2);
+        font-size: 0.5em;
+        font-weight: 600;
+    }    
     .text{
-        font-size: 0.5rem;
-        margin-top:10%;
+        margin-right: 0rem;
     }
     .social-icon{
         padding-right: 1%;
     }
-    .mix{
-        margin-right: 20%;
-        margin-bottom: 40%;
-    }
-    .main img {
-        height: 18rem;
-        margin-bottom: -10%;
-        margin-top: 0%;
-    }
-    .bng{
-        margin-top: -3rem;
-        height: 14rem;
-        width: 9rem;   
+    .btn{
+        padding: auto;
     }
 }
 @media (max-width:375px) {
+    .nav {
+        display: none;
+    }
     .main{
         overflow: hidden;
         padding-left: 10%;
     }
+    .main .con {
+        display: block;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 0%;
+    }
+    .btn{
+        padding: 3% 6%;
+    }
+    .main h2 {
+        color: var(--col-3);
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    
+    .main h2 span {
+        display: block;
+        color: var(--col-2);
+        font-size: 0.7em;
+        font-weight: 600;
+    }    
+    .text{
+        margin: 0%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
     .social-icon{
         padding-left: 1%;
     }
-    .mix{
-        text-align: center;
-        margin-right: 40%;
-        margin-bottom: 50%;
-    }
-    .main img {
-        height: 18rem;
-        margin-bottom: -10%;
-        margin-top: 0%;
-    }
-    .bng{
-        margin-top: -3rem;
-        height: 14rem;
-        width: 9rem;   }
 }
 @media (max-width:426px) {
+    .nav {
+        display: none;
+    }
     .main{
+        display: block;
+        background-image: url(imges/PHONE31.png);
         overflow: hidden;
     }
-    .text{
-        font-size: 0.6rem;
-        margin-top: 10%;
-        margin-bottom: 30%;
-    }
-    .mix{
-        text-align: center;
-        margin-right: 40%;
-        margin-top: 30%;
-        margin-bottom: 10%;
-    }
-    .main img {
-        height: 18rem;
-        margin-bottom: -10%;
+    .main .con {
         margin-top: 0%;
+        text-align: center;
     }
-    .bng{
-        margin-top: -3rem;
-        height: 14rem;
-        width: 9rem;   
+    .main h2 {
+        color: var(--col-3);
+        font-size: 0.9em;
+        font-weight: 500;
+    }
+    .main h2 span {
+        display: block;
+        color: var(--col-2);
+        font-size: 0.9em;
+        font-weight: 600;
+    }    
+    .text{
+        margin: 0%;
+        margin-top: 5%;
+        margin-right: 10%;
+        margin-left: 20%;
+    }
+    .btn a{
+        font-size: 0.3rem;
     }
     .pro-info{
         padding-right: 0%;
@@ -481,15 +516,21 @@ ul {
     .more-detils{
         text-align: center;
     }
+    .social-icon {
+        justify-content:end;
+    }
+    p{
+        text-align: center;
+    }
 }
 @media (max-width:768px) {
     .main{
         overflow: hidden;
         padding: 0%;
     }
-    .text{
-        margin-top: 20%;
-    }
+    /*.text {
+        margin: 2rem;
+    }*/
     .logo{
         font-size: 1rem;
     }
@@ -498,11 +539,6 @@ ul {
     }
     .social-icon a{
         padding-right: 7%;
-    }
-    .mix{
-        text-align: center;
-        margin-right: 40%;
-        margin-top: 10%;
     }
     .about{
         height: max-content;
@@ -513,18 +549,12 @@ ul {
     .footer{
         height: min-content;
     }
-    .main img {
-        height: 18rem;
-        margin-bottom: -10%;
-        margin-top: 0%;
+    .btn{
+        padding: 4% 8%;
     }
-    .bng{
-        margin-top: -3rem;
-        height: 14rem;
-        width: 9rem;   }
 }
 @media (max-width: 600px) {        
-    .nav {
+    /*.nav {
             display: none;
         }
     
@@ -548,8 +578,7 @@ ul {
         .main .con {
             margin-top: 30%;
             /* flex-direction: column; */
-            flex-basis: auto;
-            /* gap: 0; */
+            /* gap: 0; 
         }
     
         .main h2 {
@@ -569,34 +598,13 @@ ul {
             display:block;
             font-size: 0.9rem;
             width: 50%;
-        }
-        .main img {
-            height: 18rem;
-            margin-bottom: -0.8%;
-        }
-    
-        .bng{
-            margin-top: -3rem;
-            height: 14rem;
-            width: 9rem;   }
-    
-        .mix{
-            margin-right: 20%;
-            margin-bottom: 20%;
-        }
+        }*/
         .social-icon{
             font-size: 0.7rem;
         }
         .cart2{
             height: max-content;
         }
-        .btn {
-            text-align: center;
-            font-size: 0.8rem;
-            padding: 6% 7%;
-            margin-bottom: 10px;
-        }
-    
         .social-icon a {
             padding-left: 0.5rem;
             font-size: 1em;
@@ -606,9 +614,7 @@ ul {
         .about , .carts-content{
             height: max-content;
         }
-    section{
-        width: 100%;
-    }
+    
     .cart{
         margin-bottom: 3%;
     }
@@ -639,7 +645,6 @@ ul {
         padding-right: 0%;
     }
 }
-
 @media (min-width: 601px) and (max-width: 1024px) {
     body {
         font-size: 16px;
