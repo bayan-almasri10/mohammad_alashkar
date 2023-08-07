@@ -502,6 +502,7 @@ ul {
         margin-top: 5%;
         margin-right: 10%;
         margin-left: 20%;
+        text-align: right;
     }
     .btn a{
         font-size: 0.3rem;
