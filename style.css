@@ -391,6 +391,7 @@ ul {
     color: var(--col-3);
 }
 .footer{
+    
     background-color: var(--col-4);
     color: var(--col-1);
     padding: 15px;
@@ -459,8 +460,14 @@ ul {
     p{
         text-align: center;
     }
+    .social-icon{
+        text-align: left;
+    }
+    .social-icon a{
+        margin: 0%;
+    }
     .btn{
-        padding: 3% 6%;
+        padding: 4% 8%;
         font-size: 0.3rem;
     }
     .social-icon2{
@@ -476,11 +483,12 @@ ul {
 }
 @media (max-width:768px) {
     .main{
+        
         overflow: hidden;
         padding: 0%;
     }
     .text{
-        margin-top: 20%;
+        margin-top: 10%;
     }
     .logo{
         font-size: 1rem;
@@ -595,7 +603,7 @@ ul {
         
     }
     .pro-cart{
-        height: max-content;
+        height: fit-content;
     }
     .pro-cart a{
         margin-bottom: 6rem;
